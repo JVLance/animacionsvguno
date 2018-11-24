@@ -1,0 +1,51 @@
+PARAMETROS ORIENTACIÓN HORIZONTAL
+
+*** Elemento 1 ***
+- estado inicial:  visibilidad: 0%
+- animación: fade in
+- duración: 1,5 segundos
+- posicion en el tiempo: segundo 0
+- estado final: visibilidad: 100%
+
+*** Elemento 2 ***
+- estado inicial:  tamaño: 0% // posición: x: 173 y:144
+- animación: aumento progresivo de tamaño
+- duración: 1 segundo
+- posicion en el tiempo: segundo 1,5
+- estado final: tamaño: 100% // posición: x: 173 y:144
+
+*** Elemento 3 ***
+- estado inicial:  Visibilidad: 0% // posición: x: 196 y:266
+- animación: aparición progresiva de izquierda a derecha
+- duración: 1 segundo
+- posicion en el tiempo: segundo 2,8
+- estado final: Visibilidad: 100% // posición: x: 196 y:266
+
+*** Elemento 4 ***
+- estado inicial:  tamaño: 0% // posición: x: 701 y: 249
+- animación: aumento progresivo de tamaño
+- duración: 0,6 segundos
+- posicion en el tiempo: segundo 3,2
+- estado final: tamaño: 100% // posición: x: 701 y: 249
+
+*** Elemento 5 ***
+- estado inicial:  tamaño: 0% // posición: x: 843 y: 78
+- animación: aumento progresivo de tamaño
+- duración: 0,6 segundos
+- posicion en el tiempo: segundo 4
+- estado final: tamaño: 100% // posición: x: 843 y: 78
+
+*** Elemento 6 ***
+- estado inicial tamaño: 0% // posición: x: 982 y: 249
+- animación: aumento progresivo de tamaño
+- duración: 0,6 segundos
+- posicion en el tiempo: segundo 4,8
+- estado final: tamaño: 100% // posición: x: 982 y: 249
+
+
+*** Elemento 7 ***
+- estado inicial tamaño: posición: x: 0 y: 622
+- animación: aumento progresivo de tamaño
+- duración: 1 segundo
+- posicion en el tiempo: segundo 5,2
+- estado final: tamaño: 100% // posición: x:0  y: 561

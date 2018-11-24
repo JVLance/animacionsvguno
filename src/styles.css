@@ -1,0 +1,49 @@
+.fondo {
+    position: absolute;
+    display: none;
+}
+
+.titulo {
+    position: absolute;
+    left: 173px;
+    top: 144px;
+    display: none;
+}
+
+.servicios_digitales {
+    position: absolute;
+    display: none;
+    left: 196px;
+    top: 266px;
+}
+
+.publicidad {
+    position: absolute;
+    left: 701px;
+    top: 249px;
+    z-index: 9999;
+    display: none;
+}
+
+.programacion {
+    position: absolute;
+    left: 843px;
+    top: 78px;
+    z-index: 9999;
+    display: none;
+}
+
+.imagen {
+    position: absolute;
+    left: 982px;
+    top: 249px;
+    z-index: 9999;
+    display: none;
+}
+
+.piepagina {
+    position: absolute;
+    left: 0px;
+    top: 622px;
+    display: none;
+}
