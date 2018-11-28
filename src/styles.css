@@ -1,49 +1,122 @@
-.fondo {
+/* GENERICOS */
+
+.contenedor {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
     position: absolute;
+}
+
+.contenedor_v {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+/* HORIZONTAL */
+
+.fondo {
+    position: relative;
     display: none;
 }
 
 .titulo {
-    position: absolute;
-    left: 173px;
-    top: 144px;
+    position: relative;
+    left: 12.7%;
+    top: 23.15%;
     display: none;
 }
 
 .servicios_digitales {
-    position: absolute;
+    position: relative;
     display: none;
-    left: 196px;
-    top: 266px;
+    left: 14.4%;
+    top: 42.76%;
 }
 
 .publicidad {
-    position: absolute;
-    left: 701px;
-    top: 249px;
+    position: relative;
+    left: 51.62%;
+    top: 40.03%;
     z-index: 9999;
     display: none;
 }
 
 .programacion {
-    position: absolute;
-    left: 843px;
-    top: 78px;
+    position: relative;
+    left: 62.07%;
+    top: 12.54%;
     z-index: 9999;
     display: none;
 }
 
 .imagen {
-    position: absolute;
-    left: 982px;
-    top: 249px;
+    position: relative;
+    left: 72.31%;
+    top: 40.03%;
     z-index: 9999;
     display: none;
 }
 
 .piepagina {
+    position: relative;
+    left: 0%;
+    top: 100%;
+    display: none;
+    width: 100%;
+}
+
+
+/* VERTICAL */
+
+.fondo_vertical {
     position: absolute;
-    left: 0px;
-    top: 622px;
+    display: none;
+}
+
+.titulo_vertical {
+    position: absolute;
+    left: 18.05%;
+    top: 14.69%;
+    display: none;
+}
+
+.servicios_digitales_vertical {
+    position: absolute;
+    display: none;
+    left: 25.5%;
+    top: 29.21%;
+}
+
+.publicidad_vertical {
+    position: absolute;
+    left: 3.19%;
+    top: 44.89%;
+    z-index: 9999;
+    display: none;
+}
+
+.programacion_vertical {
+    position: absolute;
+    left: 36.11%;
+    top: 54.65%;
+    z-index: 9999;
+    display: none;
+}
+
+.imagen_vertical {
+    position: absolute;
+    left: 69.02%;
+    top: 44.89%;
+    z-index: 9999;
+    display: none;
+}
+
+.piepagina_vertical {
+    position: absolute;
+    left: 0%;
+    top: 95.16%;
     display: none;
 }

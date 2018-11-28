@@ -1,5 +1,5 @@
 
-
+<div class = "contenedor">
 <svg version="1.1" id="Fondo" class="fondo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1358px" height="622px" viewBox="0 0 1358 622" enable-background="new 0 0 1358 622" xml:space="preserve" preserveAspectRatio="none">
             <g>
                <defs>
@@ -8635,6 +8635,10 @@
            </g>
         </svg>
 
+
+
+</div>
+<div class = "contenedor">
 <svg version="1.1" id="Servicios_digitales" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="173" y="144" width="353.477px" height="117.039px" viewBox="0 0 353.477 117.039" enable-background="new 0 0 353.477 117.039" xml:space="preserve" preserveAspectRatio="none" class="servicios_digitales">
     <g>
         <path fill="#70706F" d="M1.985,117.039L1.985,117.039c-1.096,0-1.985-0.889-1.985-1.985V1.985C0,0.889,0.889,0,1.985,0h0
@@ -8881,8 +8885,8 @@
         </g>
     </g>
 </svg>
-
-
+</div>
+<div class = "contenedor">
 <svg version="1.1" id="Megafono" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="201.625px" height="201.625px" viewBox="0 0 201.625 201.625" enable-background="new 0 0 201.625 201.625" xml:space="preserve" class = "publicidad" preserveAspectRatio="none">
     <g>
         <circle fill="#FFFFFF" cx="100.812" cy="100.812" r="100.812"/>
@@ -8949,7 +8953,8 @@
         </g>
     </g>
 </svg>
-
+</div>
+<div class = "contenedor">
 <svg version="1.1" id="Teclado" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="201.625px" height="201.625px" viewBox="0 0 201.625 201.625" enable-background="new 0 0 201.625 201.625" xml:space="preserve" class = "programacion" preserveAspectRatio="none">
     <circle fill="#D8ECE8" cx="100.812" cy="100.812" r="100.812"/>
     <g>
@@ -9069,8 +9074,8 @@
         </g>
     </g>
 </svg>
-
-
+</div>
+<div class = "contenedor">
 <svg version="1.1" id="Pincel" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="201.625px" height="201.625px" viewBox="0 0 201.625 201.625" enable-background="new 0 0 201.625 201.625" xml:space="preserve" class = "imagen" preserveAspectRatio="none">
     <circle fill="#FBDBD0" cx="100.813" cy="100.812" r="100.812"/>
     <g>
@@ -9122,7 +9127,8 @@
         </g>
     </g>
 </svg>
-
+</div>
+<div class = "contenedor">
 <svg version="1.1" id="Titulo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="379.57px" height="77.021px" viewBox="0 0 379.57 77.021" enable-background="new 0 0 379.57 77.021" xml:space="preserve" class = "titulo" preserveAspectRatio="none">
     <g>
         <g>
@@ -9178,7 +9184,8 @@
         </g>
     </g>
 </svg>
-
+</div>
+<div class = "contenedor">
 <svg version="1.1" id="Footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1358px" height="54.421px" viewBox="0 0 1358 54.421" enable-background="new 0 0 1358 54.421" xml:space="preserve" class = "piepagina" preserveAspectRatio="none" >
     <polygon fill="#70C1AC" points="0,45.565 580.14,44.85 589.146,0.248 769.843,0 778.259,44.85 1358,44.84 1358,53.998 0.136,54.421 
         "/>
@@ -9204,7 +9211,7 @@
         <path fill="#FFFFFF" d="M752.415,30.831h6.023v3.268h-10.281V14.85h4.258V30.831z"/>
     </g>
 </svg>
-
+</div>
 
 
 
