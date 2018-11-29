@@ -33,10 +33,8 @@ function Animator(params) {
     this.animations = (typeof params.animations != 'undefined') ? params.animations : new Array();
     this.duration = (typeof params.duration != 'undefined') ? params.duration : 0;
 
-    let aspecto = calculateAspectRatioFit($(window).width(), $(window).height(), params.width, params.height);
-
-    this.width = aspecto.width;
-    this.height = aspecto.height;
+    this.width = params.width;
+    this.height = params.height;
     this.container = params.container;
 
     this.callback_animations = {};
@@ -130,16 +128,14 @@ let Animation = (function() {
             let attr = this.easeInOutQuart(time, from, to - from, duration);
 
             if (type == 'attr') {
-                rect.setAttribute(this.attr, this.getProportionalValue(attr, this.attr, unit));
+                rect.setAttribute(this.attr, this.getProportionalValue(attr, this.attr, unit, to));
             } else if (type == 'css') {
-                rect.style[this.attr] = this.getProportionalValue(attr, this.attr, unit);
+                rect.style[this.attr] = this.getProportionalValue(attr, this.attr, unit, to);
             }
 
             let attrfinal = (to > from) ? (attr >= to) : (attr <= to);
 
             if (time >= duration || attrfinal) {
-                console.log('atributo: ' + this.attr);
-                console.log('porcentaje: ' + this.getProportionalValue(attr, this.attr, unit));
 
                 clearInterval(timer)
             };
@@ -152,7 +148,7 @@ let Animation = (function() {
         return -c / 2 * ((t -= 2) * t * t * t - 2) + b;
     }
 
-    Animation.prototype.getProportionalValue = function(value, name, unit) {
+    Animation.prototype.getProportionalValue = function(value, name, unit, to) {
         let orientation = null;
         if (name == 'width' || name == 'left' || name == 'right') {
             orientation = 'horizontal';
@@ -162,16 +158,9 @@ let Animation = (function() {
             return value + unit;
         }
 
-        //let maxSizes = calculateAspectRatioFit($(window).width(), $(window).height(), this.width, this.height);
-        /*
-        console.log("El maxSizes es ");
-        console.log
+        if (name == 'left') {
 
-        let cont_w = parseFloat(document.getElementById(this.container).clientWidth);
-        let cont_h = parseFloat(document.getElementById(this.container).clientHeight);
-        */
-
-        //let container = calculateAspectRatioFit(maxSizes.width, maxSizes.height, value, value);
+        }
 
         let comparer = (orientation == 'horizontal') ? this.width : this.height;
 
@@ -212,22 +201,55 @@ function calculateAspectRatioFit(srcWidth, srcHeight, maxWidth, maxHeight) {
 
 function setMedidas(clase, width, height) {
 
+
+
     /* HORIZONTAL */
     let aspecto = calculateAspectRatioFit($(window).width(), $(window).height(), width, height);
 
     let w = (aspecto.width / $(window).width()) * 100;
     let h = (aspecto.height / $(window).height()) * 100;
 
-    let margin_w = ($(window).width() - aspecto.width);
-    let margin_h = ($(window).height() - aspecto.height);
 
-    margin_w = (margin_w / $(window).width()) / 100;
-    margin_h = (margin_h / $(window).height()) / 100;
+    let verificador = $(window).width() / $(window).height();
+
+    if (verificador <= 1 && clase == 'contenedor_v') {
+
+        //Vertical
+
+        let dif_l = ($(window).width() - aspecto.width) / 2;
+        $(document.body).css('margin-left', dif_l + 'px');
+        $(document.body).css('margin-top', '0px');
+    } else if (clase == 'contenedor') {
+        //Horizontal
+
+        let dif_t = ($(window).height() - aspecto.height) / 2;
+        $(document.body).css('margin-left', '0px');
+        $(document.body).css('margin-top', dif_t + 'px');
+
+
+    }
 
 
 
     $('.' + clase).css('width', w + '%');
     $('.' + clase).css('height', h + '%');
-    $('.' + clase).css('margin-left', margin_w + '%');
-    $('.' + clase).css('margin-top', margin_h + '%');
+
+}
+
+function maskAparition(direction) {
+    return function() {
+        $("#" + this.element).fadeIn(this.duration * 1000);
+
+        let step = 0;
+        let timerstep = setInterval(() => {
+            step = step + (this.duration * 1000) / 50;
+            percentage = step / this.duration;
+
+            $("#" + this.element).css('mask-image', 'linear-gradient(to ' + direction + ', rgba(0,0,0,1) 0%, rgba(0,0,0,0.2) ' + percentage + '%, rgba(0,0,0,0) 100%)');
+            if (percentage >= 100) {
+                $("#" + this.element).css('mask-image', '');
+                clearInterval(timerstep);
+            }
+        }, this.duration * 50);
+    }
 }

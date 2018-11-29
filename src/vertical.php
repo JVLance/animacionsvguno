@@ -1,5 +1,5 @@
 <div class = "contenedor_v">
-<svg version="1.1" id="Fondo_vertical"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="720px" height="1116.19px" viewBox="0 0 720 1116.19" enable-background="new 0 0 720 1116.19" xml:space="preserve" preserveAspectRatio="none"> 
+<svg version="1.1" id="Fondo_vertical" class = "fondo_vertical" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="720px" height="1116.19px" viewBox="0 0 720 1116.19" enable-background="new 0 0 720 1116.19" xml:space="preserve" preserveAspectRatio="none"> 
     <g>
         <defs>
             <rect id="SVGID_1_" x="0.067" y="0.732" width="719.821" height="1115.458"/>
